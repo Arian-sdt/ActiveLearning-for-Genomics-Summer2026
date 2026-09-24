@@ -1,0 +1,6 @@
+# Purpose: reproducible random acquisition baseline.
+# How to use: pass these values to workflows/select_sequences.py random.
+method: random
+select_rows: 2000
+seed: 42
+

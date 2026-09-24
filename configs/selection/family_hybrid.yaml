@@ -1,0 +1,11 @@
+# Purpose: combine synthetic ensemble variance with known-family coverage gain.
+# How to use: run workflows/select_family_facility.py with --method hybrid,
+# --variance-table, and the desired --lambda-uncertainty value.
+method: hybrid
+conditional: true
+select_rows: 2000
+lambda_uncertainty: 0.5
+normalize_variance: minmax_candidate_pool
+normalize_facility: divide_by_total_remaining_family_weight
+ground_representation: known_parent_family_centroids
+ground_weight: remaining_family_size

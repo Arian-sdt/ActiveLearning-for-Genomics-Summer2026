@@ -1,0 +1,10 @@
+# Purpose: representative selection of the candidate pool without base-set coverage.
+# How to use: call greedy_facility_location with zero initial coverage.
+method: facility_location
+conditional: false
+select_rows: 2000
+similarity: one_minus_weighted_js_distance
+kmer_weights: [0.1, 0.3, 0.6]
+ground_representation: weighted_centroids
+optimizer: lazy_greedy
+

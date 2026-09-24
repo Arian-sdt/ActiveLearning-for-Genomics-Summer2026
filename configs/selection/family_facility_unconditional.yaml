@@ -1,0 +1,11 @@
+# Purpose: synthetic selection using known parent families instead of LSH.
+# How to use: pass these settings to workflows/select_family_facility.py without
+# --conditional. Existing base IDs are excluded, but do not initialize coverage.
+method: facility
+conditional: false
+select_rows: 2000
+ground_representation: known_parent_family_centroids
+ground_weight: remaining_family_size
+similarity: one_minus_weighted_js_distance
+kmer_weights: [0.1, 0.3, 0.6]
+optimizer: lazy_greedy

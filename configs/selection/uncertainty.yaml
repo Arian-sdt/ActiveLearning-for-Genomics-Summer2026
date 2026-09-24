@@ -1,0 +1,7 @@
+# Purpose: select examples with highest sample variance across ensemble predictions.
+# How to use: pass model runs and exclusions to workflows/select_sequences.py uncertainty.
+method: uncertainty
+select_rows: 2000
+variance_ddof: 1
+batch_size: 512
+

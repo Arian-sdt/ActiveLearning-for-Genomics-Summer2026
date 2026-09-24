@@ -1,0 +1,11 @@
+# Purpose: representative selection beyond coverage already provided by a base set.
+# How to use: build ground centroids/weights, initialize coverage from base features,
+# then call debour.selection.facility_location.greedy_facility_location.
+method: facility_location
+conditional: true
+select_rows: 2000
+similarity: one_minus_weighted_js_distance
+kmer_weights: [0.1, 0.3, 0.6]
+ground_representation: weighted_centroids
+optimizer: lazy_greedy
+

@@ -1,0 +1,21 @@
+# Purpose: canonical hyperparameters for the BHI-style CNN+BiLSTM.
+# How to use: copy values into workflow arguments or load this YAML in an experiment wrapper.
+architecture: BhiCnnBiLstm
+sequence_length: 200
+encoding_channels: [A, G, C, T]
+dropout: 0.1
+epochs: 80
+batch_size: 32
+validation_batch_size: 256
+validation_fraction: 0.1
+optimizer: AdamW
+learning_rate: 0.005
+weight_decay: 0.01
+loss: HuberLoss
+huber_delta: 1.0
+scheduler: OneCycleLR
+anneal_strategy: cos
+pct_start: 0.3
+div_factor: 25.0
+model_selection: best_validation_pearsonr
+

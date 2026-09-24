@@ -1,0 +1,11 @@
+# Purpose: controlled redundancy benchmark based on known parent mutation families.
+# How to use: pass corresponding values to workflows/run_synthetic_benchmark.py.
+prototype_rows: 1000
+prototype_method: farthest_first_weighted_js
+copies_per_parent: [50, 100]
+mutation_levels: [1, 4, 7, 10, 13, 16, 19]
+seed: 42
+base_training_rows: 10000
+round_add_rows: 2000
+ensemble_seeds: [42, 43, 44, 45, 46]
+

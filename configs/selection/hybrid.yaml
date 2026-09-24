@@ -1,0 +1,9 @@
+# Purpose: convex combination of normalized variance and average facility marginal gain.
+# How to use: sweep lambda_uncertainty; higher lambda prioritizes model disagreement.
+method: hybrid
+select_rows: 2000
+lambda_uncertainty: 0.5
+normalize_variance: minmax_candidate_pool
+normalize_facility: divide_by_total_ground_weight
+conditional: true
+

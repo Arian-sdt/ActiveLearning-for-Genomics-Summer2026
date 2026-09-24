@@ -1,0 +1,11 @@
+# Purpose: reference design for repeated K562 uncertainty-based active learning.
+# How to use: replace paths, then execute equivalent workflow commands in docs/COMMANDS.md.
+table: ../data/DATA-Table_S2__MPRA_dataset.txt
+base_rows: 120000
+round_add_rows: 20000
+ensemble_seeds: [42, 43, 44, 45, 46]
+training_sizes: [120000, 140000, 160000, 180000]
+heldout_rows: 37000
+test_seed: 42
+bootstrap_samples: 1000
+
