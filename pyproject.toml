@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "debour-pipeline"
+version = "0.1.0"
+description = "Reusable active-learning pipeline for DNA activity prediction with CNN-BiLSTM ensembles and submodular selection."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "torch>=2.1",
+  "tqdm>=4.65",
+  "matplotlib>=3.7",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+umap = ["umap-learn>=0.5"]
+stats = ["scipy>=1.10"]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+debour-train = "debour.training.trainer:main"
+debour-select = "debour.selection.cli:main"
+debour-evaluate = "debour.evaluation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
