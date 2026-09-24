@@ -1,0 +1,11 @@
+# Purpose: historical real-data LSH and centroid-facility experiment settings.
+# How to use: supply paths to the corresponding stage in run.py.
+experiment: lsh_centroid_selection
+kmer_features: normalized_k1_k2_k3
+kmer_weights: [0.1, 0.3, 0.6]
+lsh_bits: 22
+lsh_seed: 42
+ground_representation: bucket_centroids
+ground_weight: remaining_bucket_size
+selection_rows: 20000
+methods: [facility_unconditional, facility_conditional, hybrid_unconditional, hybrid_conditional]

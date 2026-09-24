@@ -1,0 +1,11 @@
+# Purpose: historical hybrid acquisition sweeps and normalization comparisons.
+# How to use: pass paths to run.py and choose lsh or family representation.
+experiment: hybrid_lambda_sweep
+lambda_semantics: weight_on_normalized_ensemble_variance
+standard_lambdas: [0.2, 0.4, 0.6, 0.8]
+small_lambdas_tested: [0.01, 0.025, 0.05, 0.075, 0.1]
+variance_normalization: minmax_over_candidate_pool
+facility_normalization: divide_by_total_ground_weight
+modes: [conditional, unconditional]
+ground_representations: [lsh_bucket_centroids, known_parent_family_centroids]
+selection_rows: 2000

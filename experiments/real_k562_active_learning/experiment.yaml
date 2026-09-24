@@ -1,0 +1,13 @@
+# Purpose: historical design for the real K562 active-learning learning curve.
+# How to use: run the matching stage in run.py and replace data/output paths.
+experiment: real_k562_active_learning
+dataset: Gosai_Table_S2_K562_rows
+base_rows: 120000
+round_add_rows: 20000
+training_sizes: [120000, 140000, 160000, 180000]
+ensemble_seeds: [42, 43, 44, 45, 46]
+epochs: 80
+selection: ensemble_prediction_sample_variance
+retraining: from_scratch
+heldout_rows: 37000
+bootstrap_samples: 1000

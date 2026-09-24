@@ -1,0 +1,16 @@
+# Purpose: controlled redundancy experiment with true parent-family grouping.
+# How to use: execute stages in run.py and replace source/oracle paths.
+experiment: synthetic_family_active_learning
+prototype_rows: 1000
+prototype_selection: farthest_first_weighted_js
+copies_per_parent: [50, 100]
+mutation_levels: [1, 4, 7, 10, 13, 16, 19]
+mutation_seed: 42
+base_rows: 10000
+base_selection_seed: 2026
+add_rows: 2000
+ensemble_seeds: [42, 43, 44, 45, 46]
+ground_representation: known_parent_family_centroids
+methods: [random, uncertainty, family_unconditional, family_conditional, hybrid]
+heldout_rows: 10000
+bootstrap_samples: 1000
