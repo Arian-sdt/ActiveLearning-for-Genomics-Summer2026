@@ -295,7 +295,6 @@ compose reusable functions from `src/debour/`.
 | `docs/RESULTS.md` | Consolidated quantitative observations with provenance caveats. |
 | `docs/DECISIONS.md` | Methodological decisions, rationale, limitations, and recommended controls. |
 | `docs/SMOKE_TEST_REPORT.md` | Package-wide verification coverage, fixes applied, and remaining environment limitations. |
-| `docs/PAPER_OUTLINE.tex` | Compile-ready LaTeX manuscript outline covering sections, equations, figures, tables, scope, and required analyses. |
 
 ### `tests/`: Fast Contract Checks
 
