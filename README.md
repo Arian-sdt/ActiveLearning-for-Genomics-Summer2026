@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This folder is a self-contained, reusable version of the DeBour DNA active-learning workflow. It covers sequence-table validation, normalized k-mer features, weighted Jensen-Shannon distance, the BHI-style CNN+BiLSTM model, ensemble uncertainty, facility-location and hybrid selection, bootstrap evaluation, visualization, synthetic redundancy benchmarks, and Slurm job generation. Reusable implementation lives in `src/debour/`; concrete historical studies live in `experiments/`.
+This folder is a self-contained, reusable version of the DNA active-learning workflow. It covers sequence-table validation, normalized k-mer features, weighted Jensen-Shannon distance, the CNN+BiLSTM model, ensemble uncertainty, facility-location and hybrid selection, bootstrap evaluation, visualization, synthetic redundancy benchmarks, and Slurm job generation. Reusable implementation lives in `src/debour/`; concrete historical studies live in `experiments/`.
 
 
 ## Project Roadmap
